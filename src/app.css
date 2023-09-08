@@ -1,0 +1,161 @@
+.app {
+  height: 100vh;
+  display: flex;
+  background-color: #020230;
+  color: white;
+}
+.main {
+  width: 75%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #05054e),
+    url("C:\Users\patel\code_workspace\project\quiz\quizmania\src\source\166229332635486.jpg")
+      center,
+    no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  height: 50%;
+  position: relative;
+}
+.timer {
+  width: 70px;
+  height: 70px;
+  border: 5px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* top tp left margin  */
+  /* margin: 250px 60px; */
+  bottom: 10px;
+  left: 80px;
+  font-size: 35px;
+  font-weight: 700;
+  position: absolute;
+}
+.quizmania {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.question {
+  width: 80%;
+  border: 5px solid white;
+  background: linear-gradient(#020230, black);
+  /* text is center only */
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+.answers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* this use for upper and lower box  */
+  flex-wrap: wrap;
+  
+}
+.answer {
+  width: 37%;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid white;
+  background: linear-gradient(#020230, black);
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 300;
+  /* margin left top right bottom */
+  margin: 0 10px 20px 10px;
+  cursor: pointer;
+}
+.answer:hover, .answer.active{
+  background: linear-gradient(rgb(14, 25, 147), rgb(3, 14, 27));
+}
+
+.answer.correct{
+  animation: correct 3s ease forwards;
+}
+@keyframes correct{
+  0%,
+  22%,
+  42%{
+    background:rgb(3, 33, 3);
+  }
+  20%,
+  40%{
+    background:linear-gradient(green, rgb(3, 33, 3));
+  }
+  62%,
+  100%{
+    background:linear-gradient(green, rgb(3, 33, 3));
+  }
+}
+.answer.wrong{
+  animation: wrong 3s ease forwards;
+}
+@keyframes wrong{
+  0%, 
+  22%,
+  42%{
+    background: rgb(160, 41, 35);
+  }
+  40%,
+  60%{
+    background:linear-gradient(rgb(160, 41, 35),rgb(60, 5, 5));
+  }
+  62%,
+  100%{
+    background: linear-gradient(rgb(160, 41, 35),rgb(60, 5, 5));
+  }
+}
+.bottom {
+  height: 50%;
+}
+.pyramid {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.moneyList {
+  list-style: none;
+  width: 100%;
+  padding: 20px;
+}
+.moneyListItem {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+.moneyListItem.active {
+  background-color: teal;
+}
+.moneyListItemNumber {
+  font-size: 18px;
+  font-weight: 100;
+  padding: 2px;
+  /* space between num and amount  */
+  width: 30%;
+}
+.moneyListItemAmount {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 2px;
+}
+
+
+.endText{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  margin: auto;
+  color: #ffffff;
+  font-size: 60px;
+}
