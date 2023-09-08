@@ -1,5 +1,9 @@
-# Getting Started with Create React App
+# QuizMania 👍
 
+
+https://github.com/rensibhimani/QuizMania/assets/137809172/435bd253-9eed-4d9f-a7de-6cc6a5ca2f7f
+
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
