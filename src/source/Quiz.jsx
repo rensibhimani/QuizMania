@@ -1,8 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import useSound from "use-sound";
-// import true from "./source/true.wav";
-// import false from "./source/false.wav";
-//  import letsPlay from "assest/kbc.wav";
 
 export default function Quiz({
   data,
@@ -13,14 +9,7 @@ export default function Quiz({
   const [question, setQuestion] = useState(null);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [className, setClassName] = useState("answer");
-  // const [letsPlay] = useSound("kbc.wav");
-  // const [correctAnswer] = useSound(true);
-  // const [wrongAnswer] = useSound(false);
-
-  // useEffect(() => {
-  //   letsPlay();
-  // }, [letsPlay]);
-
+ 
   useEffect(() => {
     setQuestion(data[questionNumber - 1]);
   }, [data, questionNumber]);
